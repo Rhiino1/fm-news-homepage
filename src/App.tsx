@@ -1,11 +1,17 @@
 import Footer from "@/layouts/Footer";
 import Navbar from "@/layouts/Header/Navbar";
 
-import mainImgMobile from "@/assets/images/image-web-3-mobile.jpg";
-import mainImgDesktop from "@/assets/images/image-web-3-desktop.jpg";
-import firstImg from "@/assets/images/image-retro-pcs.jpg";
-import secondImg from "@/assets/images/image-top-laptops.jpg";
-import thirdImg from "@/assets/images/image-gaming-growth.jpg";
+import {
+  mainImgMobile,
+  mainImgDesktop,
+  firstImg,
+  secondImg,
+  thirdImg,
+} from "@/assets/images/index";
+
+import SmallNews from "@/components/SmallNews";
+import MainNews from "@/components/MainNews";
+import SecondNews from "@/components/SecondNews";
 
 function App() {
   return (
@@ -14,122 +20,33 @@ function App() {
         <Navbar></Navbar>
         <main className="flex flex-col items-center lg:grid-cols-3 lg:grid gap-14 lg:pt-8 lg:gap-x-10 lg:gap-y-20 lg:items-start">
           <section className="flex flex-col items-center lg:col-span-2">
-            <article className="flex flex-col gap-5 item-center lg:grid lg:grid-cols-2 lg:gap-y-5">
-              <div className="hidden w-full col-span-2 h-72 lg:block">
-                <img
-                  src={mainImgDesktop}
-                  alt="web-3-image-desktop"
-                  className="w-full h-full "
-                />
-              </div>
-              <img
-                src={mainImgMobile}
-                alt="web-3-image-mobile"
-                className="lg:hidden"
-              />
-              <div className="flex flex-col gap-5 lg:grid lg:grid-cols-2 lg:col-span-2 item-center lg:gap-x-10">
-                <h1 className="row-span-2 font-extrabold text-[39px] text-5xl font-inter text-start text-[#000019] lg:text-6xl">
-                  The Bright Future of Web 3.0?
-                </h1>
-                <p className="text-[15px] font-normal font-inter text-[#5D5F79] lg:pr-8">
-                  We dive into the next evolution of the web that claims to put
-                  the power of the platforms back into the hands of the people.
-                  But is it really fulfilling its promise?
-                </p>
-                <button className="col-start-2 uppercase w-[56%] lg:w-48 transition-all bg-[#F15E50] font-bold font-inter text-lg text-[#FFFDFA] py-3 lg:py-1 tracking-wider hover:bg-[#000019]">
-                  Read more
-                </button>
-              </div>
-            </article>
+            <MainNews
+              desktopImg={mainImgDesktop}
+              mobileImg={mainImgMobile}
+            ></MainNews>
           </section>
           <section className="flex flex-col gap-5 item-center bg-[#000019] lg:pt-6 lg:px-6 lg:pr-10 lg:pb-8 p-6 w-full lg:gap-5 lg:col-span-1">
-            <h1 className="text-4xl font-extrabold font-inter text-[#E9AB53]">
-              New
-            </h1>
-            <article className="flex flex-col gap-4">
-              <h2 className="text-xl font-bold font-inter text-[#FFFDFA] hover:text-[#E9AB53]">
-                <a href="#">Hydrogen VS Electric Cars</a>
-              </h2>
-              <p className="text-[#C5C6CE]">
-                Will hydrogen-fueled cars ever catch up to EVs?
-              </p>
-            </article>
-            <hr className="my-1 bg-[#FFFDFA]"></hr>
-            <article className="flex flex-col gap-4">
-              <h2 className="text-xl font-bold font-inter text-[#FFFDFA] hover:text-[#E9AB53]">
-                <a href="#">The Downsides of AI Artistry</a>
-              </h2>
-              <p className="text-[#C5C6CE]">
-                What are the possible adverse effects of on-demand AI image
-                generation?
-              </p>
-            </article>
-            <hr className="my-1 bg-[#FFFDFA]"></hr>
-            <article className="flex flex-col gap-4">
-              <h2 className="text-xl font-bold font-inter text-[#FFFDFA] hover:text-[#E9AB53]">
-                <a href="#">Is VC Funding Drying Up?</a>
-              </h2>
-              <p className="text-[#C5C6CE]">
-                Private funding by VC firms is down 50% YOY. We take a look at
-                what that means.
-              </p>
-            </article>
+            <SecondNews></SecondNews>
           </section>
           <section className="flex flex-col gap-5 item-center lg:grid lg:grid-cols-3 lg:col-span-3 lg:gap-x-10">
-            <article className="grid grid-cols-12 grid-rows-1">
-              <img
-                src={firstImg}
-                alt="Retro PCs"
-                className="col-span-4 col-start-1 row-span-1 row-start-1 pr-4"
-              />
-              <div className="flex flex-col col-start-5 row-start-1 row-end-2 gap-1 pl-1 lg:justify-evenly col-span-full">
-                <h1 className="font-inter text-3xl font-bold text-[#C5C6CE]">
-                  01
-                </h1>
-                <h2 className="font-inter text-lg font-bold text-[#000019] hover:text-[#F15E50]">
-                  <a href="#">Reviving Retro PCs</a>
-                </h2>
-                <p className="font-inter text-[15px] font-base text-[#5D5F79] lg:text-base lg:pr-4">
-                  What happens when old PCs are given modern upgrades?
-                </p>
-              </div>
-            </article>
-            <article className="grid grid-cols-12 grid-rows-1">
-              <img
-                src={secondImg}
-                alt="Retro PCs"
-                className="col-span-4 col-start-1 row-span-1 row-start-1 pr-4"
-              />
-              <div className="flex flex-col col-start-5 row-start-1 row-end-2 gap-1 pl-1 lg:justify-evenly col-span-full">
-                <h1 className="font-inter text-3xl font-bold text-[#C5C6CE]">
-                  02
-                </h1>
-                <h2 className="font-inter text-lg font-bold text-[#000019] hover:text-[#F15E50]">
-                  <a href="#">Top 10 Laptops of 2022</a>
-                </h2>
-                <p className="font-inter text-[15px] font-base text-[#5D5F79] lg:text-base lg:pr-4">
-                  Our best picks for various needs and budgets.
-                </p>
-              </div>
-            </article>
-            <article className="grid grid-cols-12 grid-rows-1">
-              <img
-                src={thirdImg}
-                alt="Retro PCs"
-                className="col-span-4 col-start-1 row-span-1 row-start-1 pr-4 conta"
-              />
-              <div className="flex flex-col col-start-5 row-start-1 row-end-2 gap-1 pl-1 lg:justify-evenly col-span-full">
-                <h1 className="font-inter text-3xl font-bold text-[#C5C6CE]">
-                  03
-                </h1>
-                <h2 className="font-inter text-lg font-bold text-[#000019] hover:text-[#F15E50]">
-                  <a href="#">The Growth of Gaming</a>
-                </h2>
-                <p className="font-inter text-[15px] font-base text-[#5D5F79] lg:text-base lg:pr-4">
-                  How the pandemic has sparked fresh opportunities.
-                </p>
-              </div>
-            </article>
+            <SmallNews
+              num="01"
+              title="Reviving Retro PCs"
+              text="What happens when old PCs are given modern upgrades?"
+              img={firstImg}
+            ></SmallNews>
+            <SmallNews
+              num="02"
+              title="Top 10 Laptops of 2022"
+              text="Our best picks for various needs and budgets."
+              img={secondImg}
+            ></SmallNews>
+            <SmallNews
+              num="03"
+              title="The Growth of Gaming"
+              text="How the pandemic has sparked fresh opportunities."
+              img={thirdImg}
+            ></SmallNews>
           </section>
         </main>
         <Footer></Footer>
