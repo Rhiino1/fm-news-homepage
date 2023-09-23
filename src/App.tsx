@@ -10,23 +10,36 @@ import thirdImg from "@/assets/images/image-gaming-growth.jpg";
 function App() {
   return (
     <>
-      <div className="flex flex-col h-screen w-auto gap-8 bg-[#FFFDFA] px-5 py-10">
+      <div className="flex flex-col h-screen w-auto gap-8 bg-[#FFFDFA] px-5 py-10 lg:mx-28 lg:mt-16">
         <Navbar></Navbar>
-        <main className="flex flex-col items-center gap-14 lg:hidden">
-          <section className="flex flex-col items-center lg:hidden">
-            <article className="flex flex-col gap-5 item-center">
-              <img src={mainImgMobile} alt="web-3-image" />
-              <h1 className="font-extrabold text-[39px] text-5xl font-inter text-start text-[#000019]">
-                The Bright Future of Web 3.0?
-              </h1>
-              <p className="text-[15px] font-normal font-inter text-[#5D5F79]">
-                We dive into the next evolution of the web that claims to put
-                the power of the platforms back into the hands of the people.
-                But is it really fulfilling its promise?
-              </p>
-              <button className="uppercase w-[56%] transition-all bg-[#F15E50] font-bold font-inter text-lg text-[#FFFDFA] py-3 tracking-wider hover:bg-[#000019]">
-                Read more
-              </button>
+        <main className="flex flex-col sm:items-center lg:grid-cols-3 lg:grid gap-14 lg:pt-8 lg:gap-8">
+          <section className="flex flex-col items-center lg:col-span-2">
+            <article className="flex flex-col gap-5 item-center lg:grid lg:grid-cols-2">
+              <div className="hidden w-full h-64 col-span-2 lg:block">
+                <img
+                  src={mainImgDesktop}
+                  alt="web-3-image-desktop"
+                  className="object-cover w-full h-full"
+                />
+              </div>
+              <img
+                src={mainImgMobile}
+                alt="web-3-image-mobile"
+                className="lg:hidden"
+              />
+              <div className="flex flex-col gap-5 lg:grid lg:grid-cols-2 lg:col-span-2 item-center">
+                <h1 className="row-span-2 font-extrabold text-[39px] text-5xl font-inter text-start text-[#000019] lg:text-6xl">
+                  The Bright Future of Web 3.0?
+                </h1>
+                <p className="text-[15px] font-normal font-inter text-[#5D5F79] lg:pr-10">
+                  We dive into the next evolution of the web that claims to put
+                  the power of the platforms back into the hands of the people.
+                  But is it really fulfilling its promise?
+                </p>
+                <button className="col-start-2 uppercase w-[56%] lg:w-48 transition-all bg-[#F15E50] font-bold font-inter text-lg text-[#FFFDFA] py-1 tracking-wider hover:bg-[#000019]">
+                  Read more
+                </button>
+              </div>
             </article>
           </section>
           <section className="flex flex-col gap-5 item-center bg-[#000019] p-5">
@@ -103,12 +116,18 @@ function App() {
               <img
                 src={thirdImg}
                 alt="Retro PCs"
-                className="col-span-4 col-start-1 row-span-1 row-start-1 pr-4"
+                className="col-span-4 col-start-1 row-span-1 row-start-1 pr-4 conta"
               />
               <div className="flex flex-col col-start-5 row-start-1 row-end-2 gap-1 pl-1 col-span-full">
-                <h1 className="font-inter text-3xl font-bold text-[#C5C6CE]">03</h1>
-                <h2 className="font-inter text-lg font-bold text-[#000019]">The Growth of Gaming</h2>
-                <p className="font-inter text-[15px] font-base text-[#5D5F79]">How the pandemic has sparked fresh opportunities.</p>
+                <h1 className="font-inter text-3xl font-bold text-[#C5C6CE]">
+                  03
+                </h1>
+                <h2 className="font-inter text-lg font-bold text-[#000019]">
+                  The Growth of Gaming
+                </h2>
+                <p className="font-inter text-[15px] font-base text-[#5D5F79]">
+                  How the pandemic has sparked fresh opportunities.
+                </p>
               </div>
             </article>
           </section>
