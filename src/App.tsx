@@ -12,7 +12,7 @@ function App() {
     <>
       <div className="flex flex-col h-screen w-auto gap-8 bg-[#FFFDFA] px-5 py-10">
         <Navbar></Navbar>
-        <main className="flex flex-col items-center gap-10 lg:hidden">
+        <main className="flex flex-col items-center gap-14 lg:hidden">
           <section className="flex flex-col items-center lg:hidden">
             <article className="flex flex-col gap-5 item-center">
               <img src={mainImgMobile} alt="web-3-image" />
@@ -63,23 +63,53 @@ function App() {
             </article>
           </section>
           <section className="flex flex-col gap-5 item-center">
-            <article>
-              <img src={firstImg} alt="Retro PCs" />
-              <h1>01</h1>
-              <h2>Reviving Retro PCs</h2>
-              <p>What happens when old PCs are given modern upgrades?</p>
+            <article className="grid grid-cols-12 grid-rows-1">
+              <img
+                src={firstImg}
+                alt="Retro PCs"
+                className="col-span-4 col-start-1 row-span-1 row-start-1 pr-4"
+              />
+              <div className="flex flex-col col-start-5 row-start-1 row-end-2 gap-1 pl-1 col-span-full">
+                <h1 className="font-inter text-3xl font-bold text-[#C5C6CE]">
+                  01
+                </h1>
+                <h2 className="font-inter text-lg font-bold text-[#000019]">
+                  Reviving Retro PCs
+                </h2>
+                <p className="font-inter text-[15px] font-base text-[#5D5F79]">
+                  What happens when old PCs are given modern upgrades?
+                </p>
+              </div>
             </article>
-            <article>
-              <img src={secondImg} alt="Retro PCs" />
-              <h1>02</h1>
-              <h2>Top 10 Laptops of 2022</h2>
-              <p>Our best picks for various needs and budgets.</p>
+            <article className="grid grid-cols-12 grid-rows-1">
+              <img
+                src={secondImg}
+                alt="Retro PCs"
+                className="col-span-4 col-start-1 row-span-1 row-start-1 pr-4"
+              />
+              <div className="flex flex-col col-start-5 row-start-1 row-end-2 gap-1 pl-1 col-span-full">
+                <h1 className="font-inter text-3xl font-bold text-[#C5C6CE]">
+                  02
+                </h1>
+                <h2 className="font-inter text-lg font-bold text-[#000019]">
+                  Top 10 Laptops of 2022
+                </h2>
+                <p className="font-inter text-[15px] font-base text-[#5D5F79]">
+                  Our best picks for various needs and budgets.
+                </p>
+              </div>
             </article>
-            <article>
-              <img src={thirdImg} alt="Retro PCs" />
-              <h1>03</h1>
-              <h2>The Growth of Gaming</h2>
-              <p>How the pandemic has sparked fresh opportunities.</p>
+            <article className="grid grid-cols-12 grid-rows-1">
+              <img
+                src={thirdImg}
+                alt="Retro PCs"
+                className="col-span-4 col-start-1 row-span-1 row-start-1 pr-4"
+              />
+              <div className="flex flex-col col-start-5 row-start-1 row-end-2 gap-1 pl-1 col-span-full">
+                <h1 className="font-inter text-3xl font-bold text-[#C5C6CE]">03</h1>
+                <h2 className="font-inter text-lg font-bold text-[#000019]">The Growth of Gaming</h2>
+                <p className="font-inter text-[15px] font-base text-[#5D5F79]">How the pandemic has sparked fresh opportunities.</p>
+              </div>
             </article>
           </section>
         </main>
