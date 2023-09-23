@@ -1,3 +1,5 @@
+import React from "react";
+
 function SecondNews() {
   const news = [
     {
@@ -16,23 +18,25 @@ function SecondNews() {
   return (
     <>
       <h1 className="text-4xl font-extrabold font-inter text-[#E9AB53]">New</h1>
-      {news.map((item, index) => {
-        return (
-          <>
-            <article key={index} className="flex flex-col gap-4">
-              <h2 className="text-xl font-bold font-inter text-[#FFFDFA] hover:text-[#E9AB53]">
-                <a href="#">{item.title}hola</a>
-              </h2>
-              <p className="text-[#C5C6CE]">{item.text}</p>
-            </article>
-            {index != news.length - 1 ? (
-              <hr className="my-1 bg-[#FFFDFA]"></hr>
-            ) : (
-              <></>
-            )}
-          </>
-        );
-      })}
+      {React.Children.toArray(
+        news.map((item, index) => {
+          return (
+            <>
+              <article className="flex flex-col gap-4">
+                <h2 className="text-xl font-bold font-inter text-[#FFFDFA] hover:text-[#E9AB53]">
+                  <a href="#">{item.title}</a>
+                </h2>
+                <p className="text-[#C5C6CE]">{item.text}</p>
+                {index != news.length - 1 ? (
+                  <hr className="my-1 bg-[#FFFDFA]"></hr>
+                ) : (
+                  <></>
+                )}
+              </article>
+            </>
+          );
+        })
+      )}
     </>
   );
 }
