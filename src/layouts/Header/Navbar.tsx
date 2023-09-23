@@ -39,19 +39,19 @@ function Navbar() {
                 </button>
               </div>
               <ul className="flex flex-col items-start justify-between gap-6 px-7 NAVIGATION-MOBILE-OPEN">
-                <li className="capitalize font-inter">
+                <li className="capitalize font-inter text-[#5D5F79] hover:text-[#F15E50]">
                   <a href="/home">Home</a>
                 </li>
-                <li className="capitalize font-inter">
+                <li className="capitalize font-inter text-[#5D5F79] hover:text-[#F15E50]">
                   <a href="/new">New</a>
                 </li>
-                <li className="capitalize font-inter">
+                <li className="capitalize font-inter text-[#5D5F79] hover:text-[#F15E50]">
                   <a href="/popular">Popular</a>
                 </li>
-                <li className="capitalize font-inter">
+                <li className="capitalize font-inter text-[#5D5F79] hover:text-[#F15E50]">
                   <a href="/trending">Trending</a>
                 </li>
-                <li className="capitalize font-inter">
+                <li className="capitalize font-inter text-[#5D5F79] hover:text-[#F15E50]">
                   <a href="/categories">Categories</a>
                 </li>
               </ul>
@@ -59,19 +59,19 @@ function Navbar() {
           </section>
 
           <ul className="hidden space-x-8 DESKTOP-MENU lg:flex">
-            <li className="capitalize">
+            <li className="capitalize font-inter text-[#5D5F79] hover:text-[#F15E50]">
               <a href="/home">Home</a>
             </li>
-            <li className="capitalize">
+            <li className="capitalize font-inter text-[#5D5F79] hover:text-[#F15E50]">
               <a href="/new">New</a>
             </li>
-            <li className="capitalize">
+            <li className="capitalize font-inter text-[#5D5F79] hover:text-[#F15E50]">
               <a href="/popular">Popular</a>
             </li>
-            <li className="capitalize">
+            <li className="capitalize font-inter text-[#5D5F79] hover:text-[#F15E50]">
               <a href="/trending">Trending</a>
             </li>
-            <li className="capitalize">
+            <li className="capitalize font-inter text-[#5D5F79] hover:text-[#F15E50]">
               <a href="/categories">Categories</a>
             </li>
           </ul>

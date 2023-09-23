@@ -10,7 +10,7 @@ import thirdImg from "@/assets/images/image-gaming-growth.jpg";
 function App() {
   return (
     <>
-      <div className="flex flex-col h-screen w-auto gap-8 bg-[#FFFDFA] px-5 py-10 lg:mx-28 lg:mt-16">
+      <div className="flex flex-col h-screen w-auto gap-8 bg-[#FFFDFA] px-5 py-10 lg:mx-28 lg:mt-10">
         <Navbar></Navbar>
         <main className="flex flex-col sm:items-center lg:grid-cols-3 lg:grid gap-14 lg:pt-8 lg:gap-8">
           <section className="flex flex-col items-center lg:col-span-2">
@@ -36,7 +36,7 @@ function App() {
                   the power of the platforms back into the hands of the people.
                   But is it really fulfilling its promise?
                 </p>
-                <button className="col-start-2 uppercase w-[56%] lg:w-48 transition-all bg-[#F15E50] font-bold font-inter text-lg text-[#FFFDFA] py-1 tracking-wider hover:bg-[#000019]">
+                <button className="col-start-2 uppercase w-[56%] lg:w-48 transition-all bg-[#F15E50] font-bold font-inter text-lg text-[#FFFDFA] py-3 lg:py-1 tracking-wider hover:bg-[#000019]">
                   Read more
                 </button>
               </div>
