@@ -1,6 +1,6 @@
 # Frontend Mentor - News homepage solution
 
-This is a solution to the [News homepage challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [News homepage challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -15,7 +15,6 @@ This is a solution to the [News homepage challenge on Frontend Mentor](https://w
     - [Continued development](#continued-development)
     - [Useful resources](#useful-resources)
   - [Author](#author)
-
 
 ## Overview
 
@@ -45,8 +44,11 @@ We had to start from something, in this case from scratch. I haven't done challe
 First of all, I'm learning tailwindcss, I know something about CSS but I was often trying to guess and discover how to do things in tailwind, for example:
 
 ```html
-<section id="card" className="w-[330px] h-auto pt-4 pb-10 flex flex-col gap-5
-justify-evenly items-center bg-white rounded-2xl"> </section>
+<section
+  id="card"
+  className="w-[330px] h-auto pt-4 pb-10 flex flex-col gap-5
+justify-evenly items-center bg-white rounded-2xl"
+></section>
 ```
 
 Everything above is already known to me, but I had to check the docs from tailwind to know how to spell it.
@@ -62,6 +64,8 @@ I do know using React for a such simple thing Its kinda overengineering, however
 - [Tailwindcss Documentation](https://tailwindcss.com/docs) - There is all the information and knowledge you need to start learning Tailwindcss.
 - [Hamburger menu with React and Tailwindcss](https://www.codementor.io/@giorgiasambrotta/hamburger-menu-with-react-and-tailwind-css-1qx6sruvua) - This one help me making a good hamb menu.
 - [Convert a color](https://convertacolor.com/) Simple web to convert colors between models.
+- [Each child should have a unique key prop](https://www.datainfinities.com/18/each-child-in-a-list-should-have-a-unique-key-prop) Helped me with the warning with the same name.
+
 ## Author
 
 - Github - [Cesar SC](https://github.com/Rhiino1)
