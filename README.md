@@ -1,29 +1,69 @@
-# React + TypeScript + Tailwindcss + Vite
+# Frontend Mentor - News homepage solution
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a solution to the [News homepage challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-Styles under Tailwindcss.
+## Table of contents
 
-Currently, two official plugins are available:
+- [Frontend Mentor - News homepage solution](#frontend-mentor---news-homepage-solution)
+  - [Table of contents](#table-of-contents)
+  - [Overview](#overview)
+    - [Screenshot](#screenshot)
+    - [Links](#links)
+  - [My process](#my-process)
+    - [Built with](#built-with)
+    - [What I learned](#what-i-learned)
+    - [Continued development](#continued-development)
+    - [Useful resources](#useful-resources)
+  - [Author](#author)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+## Overview
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Screenshot
 
-- Configure the top-level `parserOptions` property like this:
+![](./src/assets/images/screenshot_1.png)
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+### Links
+
+- Solution URL: [here](https://your-solution-url.com)
+- Live Site URL: [here](https://rhiino1.github.io/fm-QR-code-component/)
+
+## My process
+
+We had to start from something, in this case from scratch. I haven't done challenges from a while, being busy with stuff IRL. I choose this one because is an easy one to try new things, one of them is tailwindcss.
+
+### Built with
+
+- Semantic HTML5 markup
+- Flexbox
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
+- [Tailwindcss](https://tailwindcss.com/) - CSS library
+
+### What I learned
+
+First of all, I'm learning tailwindcss, I know something about CSS but I was often trying to guess and discover how to do things in tailwind, for example:
+
+```html
+<section id="card" className="w-[330px] h-auto pt-4 pb-10 flex flex-col gap-5
+justify-evenly items-center bg-white rounded-2xl"> </section>
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Everything above is already known to me, but I had to check the docs from tailwind to know how to spell it.
+
+### Continued development
+
+I manage certain things fitting some arbitrary values on styles, but I researched that tailwind offers customization on `tailwind.config.js` so next time I will use it properly.
+
+I do know using React for a such simple thing Its kinda overengineering, however, this is just the beginning to a series of challenges, thus, I made a React + Tailwind template to work with.
+
+### Useful resources
+
+- [Tailwindcss Documentation](https://tailwindcss.com/docs) - There is all the information and knowledge you need to start learning Tailwindcss.
+- [Hamburger menu with React and Tailwindcss](https://www.codementor.io/@giorgiasambrotta/hamburger-menu-with-react-and-tailwind-css-1qx6sruvua) - This one help me making a good hamb menu.
+
+## Author
+
+- Github - [Cesar SC](https://github.com/Rhiino1)
+- Frontend Mentor - [@Rhiino1](https://www.frontendmentor.io/profile/Rhiino1)
+- Twitter - [@Rhiino_1](https://www.twitter.com/Rhiino_1)
