@@ -12,9 +12,9 @@ function App() {
     <>
       <div className="flex flex-col h-screen w-auto gap-8 bg-[#FFFDFA] px-5 py-10 lg:mx-28 lg:mt-10">
         <Navbar></Navbar>
-        <main className="flex flex-col items-center lg:grid-cols-3 lg:grid gap-14 lg:pt-8 lg:gap-10 lg:items-start">
+        <main className="flex flex-col items-center lg:grid-cols-3 lg:grid gap-14 lg:pt-8 lg:gap-x-10 lg:gap-y-20 lg:items-start">
           <section className="flex flex-col items-center lg:col-span-2">
-            <article className="flex flex-col gap-5 item-center lg:grid lg:grid-cols-2">
+            <article className="flex flex-col gap-5 item-center lg:grid lg:grid-cols-2 lg:gap-y-5">
               <div className="hidden w-full col-span-2 h-72 lg:block">
                 <img
                   src={mainImgDesktop}
@@ -27,11 +27,11 @@ function App() {
                 alt="web-3-image-mobile"
                 className="lg:hidden"
               />
-              <div className="flex flex-col gap-5 lg:grid lg:grid-cols-2 lg:col-span-2 item-center">
+              <div className="flex flex-col gap-5 lg:grid lg:grid-cols-2 lg:col-span-2 item-center lg:gap-x-10">
                 <h1 className="row-span-2 font-extrabold text-[39px] text-5xl font-inter text-start text-[#000019] lg:text-6xl">
                   The Bright Future of Web 3.0?
                 </h1>
-                <p className="text-[15px] font-normal font-inter text-[#5D5F79] lg:pr-10">
+                <p className="text-[15px] font-normal font-inter text-[#5D5F79] lg:pr-8">
                   We dive into the next evolution of the web that claims to put
                   the power of the platforms back into the hands of the people.
                   But is it really fulfilling its promise?
@@ -48,7 +48,7 @@ function App() {
             </h1>
             <article className="flex flex-col gap-4">
               <h2 className="text-xl font-bold font-inter text-[#FFFDFA] hover:text-[#E9AB53]">
-              <a href="#">Hydrogen VS Electric Cars</a>
+                <a href="#">Hydrogen VS Electric Cars</a>
               </h2>
               <p className="text-[#C5C6CE]">
                 Will hydrogen-fueled cars ever catch up to EVs?
@@ -75,21 +75,21 @@ function App() {
               </p>
             </article>
           </section>
-          <section className="flex flex-col gap-5 item-center">
+          <section className="flex flex-col gap-5 item-center lg:grid lg:grid-cols-3 lg:col-span-3 lg:gap-x-10">
             <article className="grid grid-cols-12 grid-rows-1">
               <img
                 src={firstImg}
                 alt="Retro PCs"
                 className="col-span-4 col-start-1 row-span-1 row-start-1 pr-4"
               />
-              <div className="flex flex-col col-start-5 row-start-1 row-end-2 gap-1 pl-1 col-span-full">
+              <div className="flex flex-col col-start-5 row-start-1 row-end-2 gap-1 pl-1 lg:justify-evenly col-span-full">
                 <h1 className="font-inter text-3xl font-bold text-[#C5C6CE]">
                   01
                 </h1>
-                <h2 className="font-inter text-lg font-bold text-[#000019]">
-                  Reviving Retro PCs
+                <h2 className="font-inter text-lg font-bold text-[#000019] hover:text-[#F15E50]">
+                  <a href="#">Reviving Retro PCs</a>
                 </h2>
-                <p className="font-inter text-[15px] font-base text-[#5D5F79]">
+                <p className="font-inter text-[15px] font-base text-[#5D5F79] lg:text-base lg:pr-4">
                   What happens when old PCs are given modern upgrades?
                 </p>
               </div>
@@ -100,14 +100,14 @@ function App() {
                 alt="Retro PCs"
                 className="col-span-4 col-start-1 row-span-1 row-start-1 pr-4"
               />
-              <div className="flex flex-col col-start-5 row-start-1 row-end-2 gap-1 pl-1 col-span-full">
+              <div className="flex flex-col col-start-5 row-start-1 row-end-2 gap-1 pl-1 lg:justify-evenly col-span-full">
                 <h1 className="font-inter text-3xl font-bold text-[#C5C6CE]">
                   02
                 </h1>
-                <h2 className="font-inter text-lg font-bold text-[#000019]">
-                  Top 10 Laptops of 2022
+                <h2 className="font-inter text-lg font-bold text-[#000019] hover:text-[#F15E50]">
+                  <a href="#">Top 10 Laptops of 2022</a>
                 </h2>
-                <p className="font-inter text-[15px] font-base text-[#5D5F79]">
+                <p className="font-inter text-[15px] font-base text-[#5D5F79] lg:text-base lg:pr-4">
                   Our best picks for various needs and budgets.
                 </p>
               </div>
@@ -118,14 +118,14 @@ function App() {
                 alt="Retro PCs"
                 className="col-span-4 col-start-1 row-span-1 row-start-1 pr-4 conta"
               />
-              <div className="flex flex-col col-start-5 row-start-1 row-end-2 gap-1 pl-1 col-span-full">
+              <div className="flex flex-col col-start-5 row-start-1 row-end-2 gap-1 pl-1 lg:justify-evenly col-span-full">
                 <h1 className="font-inter text-3xl font-bold text-[#C5C6CE]">
                   03
                 </h1>
-                <h2 className="font-inter text-lg font-bold text-[#000019]">
-                  The Growth of Gaming
+                <h2 className="font-inter text-lg font-bold text-[#000019] hover:text-[#F15E50]">
+                  <a href="#">The Growth of Gaming</a>
                 </h2>
-                <p className="font-inter text-[15px] font-base text-[#5D5F79]">
+                <p className="font-inter text-[15px] font-base text-[#5D5F79] lg:text-base lg:pr-4">
                   How the pandemic has sparked fresh opportunities.
                 </p>
               </div>
