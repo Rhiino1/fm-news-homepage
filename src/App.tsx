@@ -12,14 +12,14 @@ function App() {
     <>
       <div className="flex flex-col h-screen w-auto gap-8 bg-[#FFFDFA] px-5 py-10 lg:mx-28 lg:mt-10">
         <Navbar></Navbar>
-        <main className="flex flex-col sm:items-center lg:grid-cols-3 lg:grid gap-14 lg:pt-8 lg:gap-8">
+        <main className="flex flex-col items-center lg:grid-cols-3 lg:grid gap-14 lg:pt-8 lg:gap-10 lg:items-start">
           <section className="flex flex-col items-center lg:col-span-2">
             <article className="flex flex-col gap-5 item-center lg:grid lg:grid-cols-2">
-              <div className="hidden w-full h-64 col-span-2 lg:block">
+              <div className="hidden w-full col-span-2 h-72 lg:block">
                 <img
                   src={mainImgDesktop}
                   alt="web-3-image-desktop"
-                  className="object-cover w-full h-full"
+                  className="w-full h-full "
                 />
               </div>
               <img
@@ -42,22 +42,22 @@ function App() {
               </div>
             </article>
           </section>
-          <section className="flex flex-col gap-5 item-center bg-[#000019] p-5">
-            <h1 className="text-3xl font-extrabold font-inter text-[#E9AB53]">
+          <section className="flex flex-col gap-5 item-center bg-[#000019] lg:pt-6 lg:px-6 lg:pr-10 lg:pb-8 p-6 w-full lg:gap-5 lg:col-span-1">
+            <h1 className="text-4xl font-extrabold font-inter text-[#E9AB53]">
               New
             </h1>
-            <article className="flex flex-col gap-2">
-              <h2 className="text-xl font-bold font-inter text-[#FFFDFA]">
-                Hydrogen VS Electric Cars
+            <article className="flex flex-col gap-4">
+              <h2 className="text-xl font-bold font-inter text-[#FFFDFA] hover:text-[#E9AB53]">
+              <a href="#">Hydrogen VS Electric Cars</a>
               </h2>
               <p className="text-[#C5C6CE]">
                 Will hydrogen-fueled cars ever catch up to EVs?
               </p>
             </article>
             <hr className="my-1 bg-[#FFFDFA]"></hr>
-            <article className="flex flex-col gap-2">
-              <h2 className="text-xl font-bold font-inter text-[#FFFDFA]">
-                The Downsides of AI Artistry
+            <article className="flex flex-col gap-4">
+              <h2 className="text-xl font-bold font-inter text-[#FFFDFA] hover:text-[#E9AB53]">
+                <a href="#">The Downsides of AI Artistry</a>
               </h2>
               <p className="text-[#C5C6CE]">
                 What are the possible adverse effects of on-demand AI image
@@ -65,9 +65,9 @@ function App() {
               </p>
             </article>
             <hr className="my-1 bg-[#FFFDFA]"></hr>
-            <article className="flex flex-col gap-2">
-              <h2 className="text-xl font-bold font-inter text-[#FFFDFA]">
-                Is VC Funding Drying Up?
+            <article className="flex flex-col gap-4">
+              <h2 className="text-xl font-bold font-inter text-[#FFFDFA] hover:text-[#E9AB53]">
+                <a href="#">Is VC Funding Drying Up?</a>
               </h2>
               <p className="text-[#C5C6CE]">
                 Private funding by VC firms is down 50% YOY. We take a look at

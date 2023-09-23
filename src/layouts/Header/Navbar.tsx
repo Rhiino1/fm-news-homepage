@@ -58,7 +58,7 @@ function Navbar() {
             </div>
           </section>
 
-          <ul className="hidden space-x-8 DESKTOP-MENU lg:flex">
+          <ul className="hidden space-x-11 DESKTOP-MENU lg:flex">
             <li className="capitalize font-inter text-[#5D5F79] hover:text-[#F15E50]">
               <a href="/home">Home</a>
             </li>
