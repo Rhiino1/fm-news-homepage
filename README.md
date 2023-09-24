@@ -20,50 +20,70 @@ This is a solution to the [News homepage challenge on Frontend Mentor](https://w
 
 ### Screenshot
 
-![](./src/assets/images/screenshot_1.png)
+![](./src/assets/images/screenshot.png)
 
 ### Links
 
-- Solution URL: [here](https://your-solution-url.com)
-- Live Site URL: [here](https://rhiino1.github.io/fm-QR-code-component/)
+- Solution URL: [here](https://www.frontendmentor.io/solutions/newshomepage-react-tailwindcss-2BtbjCrc4A)
+- Live Site URL: [here](https://rhiino1.github.io/fm-news-homepage/)
 
 ## My process
 
-We had to start from something, in this case from scratch. I haven't done challenges from a while, being busy with stuff IRL. I choose this one because is an easy one to try new things, one of them is tailwindcss.
+As I said, I will continue do some challenges, I'm feeling really good and eager to keep practicing. This was was pretty cool because It has some grid stuff within. I had to be honest, most of my frontend life I've been a Flexbox boy, that's why I choose this challenge to be my second one, meaning my real challenge is to use more Grid than Flexbox, I think I manage really well mixing both.
 
 ### Built with
 
 - Semantic HTML5 markup
 - Flexbox
+- Grid
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 - [Tailwindcss](https://tailwindcss.com/) - CSS library
 
 ### What I learned
 
-First of all, I'm learning tailwindcss, I know something about CSS but I was often trying to guess and discover how to do things in tailwind, for example:
+Keeping my learning of tailwindcss, It offers everything I need to use Grid as the main layout. Mostly of the mobile layout is made with Flexbox, but the tricky and cool part using Grid was the Desktop layout. In an early moment of development, I though just do a conditional rendering between Mobile and Desktop, then I realize I could use responsive class prefixes that Tailwind has, so I dont need to write everything twice, like this:
+
+Good✅
 
 ```html
-<section
-  id="card"
-  className="w-[330px] h-auto pt-4 pb-10 flex flex-col gap-5
-justify-evenly items-center bg-white rounded-2xl"
-></section>
+<article
+  className="flex flex-col gap-5 item-center lg:grid lg:grid-cols-2 lg:gap-y-5"
+></article>
 ```
 
-Everything above is already known to me, but I had to check the docs from tailwind to know how to spell it.
+Wrong❌
+
+```js
+{ if mobile ?
+   <article
+   className="flex flex-col gap-5 item-center"
+   ></article>
+   :
+   <article
+   className="grid grid-cols-2 gap-y-5"
+   ></article>
+}
+```
+
+Also used different ways to render HTML with React, in a classic HTML way, with a React component and even rendering an Array with map and React.
+
+```js
+news.map((item, index) => {
+  return <article className="flex flex-col gap-4"></article>;
+});
+```
 
 ### Continued development
 
-I manage certain things fitting some arbitrary values on styles, but I researched that tailwind offers customization on `tailwind.config.js` so next time I will use it properly.
-
-I do know using React for a such simple thing Its kinda overengineering, however, this is just the beginning to a series of challenges, thus, I made a React + Tailwind template to work with.
+Grid, I know It's a wonderful tool, I'm trying to love the same way everyone does, that's the path I will take from now on. Moreover, React as my second framework. Actually I had to say this: I had learned and used Vue a lot before, so learning React coming from another lib It's not that hard, so I'm cool with that.
 
 ### Useful resources
 
 - [Tailwindcss Documentation](https://tailwindcss.com/docs) - There is all the information and knowledge you need to start learning Tailwindcss.
 - [Hamburger menu with React and Tailwindcss](https://www.codementor.io/@giorgiasambrotta/hamburger-menu-with-react-and-tailwind-css-1qx6sruvua) - This one help me making a good hamb menu.
 - [Convert a color](https://convertacolor.com/) Simple web to convert colors between models.
+- [Learn CSS Grid the easy way](https://www.youtube.com/watch?v=rg7Fvvl3taU) Awesome explanation about CSS Grid for dummies like me.
 - [Each child should have a unique key prop](https://www.datainfinities.com/18/each-child-in-a-list-should-have-a-unique-key-prop) Helped me with the warning with the same name.
 
 ## Author
